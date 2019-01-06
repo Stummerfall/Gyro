@@ -10,3 +10,7 @@
 		  }
 
   window.addEventListener('deviceorientation', onOrientationChange);
+
+function openCalc(){
+	window.open("mycalc/calc.html");
+}

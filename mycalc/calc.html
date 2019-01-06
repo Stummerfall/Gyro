@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Blank App</title>
+        <style type="text/css">
+        	body {
+        		background-image: url(fon1.jpg)
+        	}
+			.but1{
+				width:83px;height:50px
+			}
+			.but2{
+				width:170px;height:50px
+			}
+			.field {
+				width:343px;height:50px;
+			}
+        </style>
+        <script type="text/javascript" src="calc.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript" src="cordova.js"></script>
+ 		<p>
+ 		<input type = "tel" id = "t1" placeholder="Number 1" class ="field">
+		</p>
+		<p><input type = "tel" id = "t2" placeholder="Number 2" class ="field"></p>
+		<p><input type = "tel" id = "sum" placeholder="Result" class ="field"></p>
+		<p>
+		<input type="button" value="+" onClick="sum()" class="but1">
+		<input type="button" value="-" onClick="dif()" class="but1">
+		<input type="button" value="*" onClick="multi()" class="but1">
+		<input type="button" value="/" onClick="amulti()" class="but1"></p>
+		<p>
+		<input type="button" value="sin" onClick="sinn()" class="but1">
+		<input type="button" value="cos" onClick="cosn()" class="but1">
+		<input type="button" value="tg" onClick="tgn()" class="but1">
+		<input type="button" value="ctg" onClick="ctgn()" class="but1"></p>
+		<p>
+		<input type="button" value="PI" onClick="pin()" class="but1">
+		<input type="button" value="e" onClick="en()" class="but1">
+		<input type="button" value="rad" onClick="radn()" class="but1">
+		<input type="button" value="deg" onClick="degn()"class="but1"></p>
+		<p>
+		<input type="button" value="Ln" onClick="lnn()" class="but1">
+		<input type="button" value="Sqrt" onClick="sqrtn()" class="but1">
+		<input type="reset" value="Reset" class="but2">
+		</p>
+    </body>
+</html>
