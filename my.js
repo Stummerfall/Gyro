@@ -4,9 +4,9 @@
    document.getElementById('beta').innerHTML = 'β = '+Math.round(e.beta);
    document.getElementById('gamma').innerHTML = 'γ = '+Math.round(e.gamma);
 	  var node = document.getElementById("text");
-	  if(e.alpha > e.beta && e.alpha > e.gamma){ node.innerHTML = '<span>Горизонтально перед собой</span>';}
-      if(e.beta > e.alpha && e.beta > e.gamma){ node.innerHTML = '<span>Вертикально перед собой</span>';}
-      if(e.gamma > e.alpha && e.gamma > e.beta){ node.innerHTML = '<span>На столе</span>';}
+      if(((e.beta>-5 && e.beta<5)||(e.beta>170&& e.beta<190)||(e.beta<-170&& e.beta>-190))&&(e.gamma>-5 && e.gamma<5))
+	  {node.innerHTML = '<span>На столе</span>';}
+	  else {node.innerHTML = '<span>Не на столе</span>';}
 		  }
 
   window.addEventListener('deviceorientation', onOrientationChange);
